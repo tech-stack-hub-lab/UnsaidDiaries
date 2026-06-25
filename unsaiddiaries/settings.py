@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 import dj_database_url
 if os.path.isfile('env.py'):
-    import env
+        import env
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -90,6 +90,10 @@ DATABASES = {
 }
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitute-ide.net/",
+    "https://*.herokuapp.com"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
