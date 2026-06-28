@@ -5,7 +5,7 @@
 
 # User-specific files
 .venv/
-.env
+diaries/fixtures/
 *.rsuser
 *.suo
 *.user
